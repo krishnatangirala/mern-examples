@@ -1,7 +1,7 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 import fs from 'fs';
 
-const URI = "mongodb://mongodb-container:27017";
+const URI = "mongodb://coredb-db:27017";
 const client = new MongoClient(URI, {
     serverApi: {
         version: ServerApiVersion.v1,

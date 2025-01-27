@@ -7,14 +7,10 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/record", records);
+app.use(`/record`, records);
 
 app.get("/", async(req, res) => {
     res.send('{ "status" : "Running" }');
-});
-
-app.get("/sample", async(req, res) => {
-    res.send('{ "name" : "Krishna Tangirala", "CreatedDate" : ' + new Date() + ' }');
 });
 
 // start the Express Server
